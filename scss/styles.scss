@@ -572,6 +572,11 @@ svg path {
 }
 
 .animation-left {
-  transform: translateX(-100px);
-  transition: all 0.2s linear;
+  transition: all 7.2s linear;
+  transform: translateX(-100px) !important;
+}
+
+.animation-stop {
+  transition: all 2.3s linear;
+  transform: translateX(0px) !important;
 }

@@ -2,7 +2,7 @@ function slider() {
   var space = 15;
   var speed = 1200;
   var swiperContainer = document.getElementById("swiper");
-  var components = document.querySelector(".swiper-slide");
+  var components = document.querySelectorAll(".slide-component");
 
   const swiper = new Swiper(".swiper", {
     loop: true,
@@ -29,29 +29,32 @@ function slider() {
       },
 
       transitionStart: function () {
-        anime({
-          targets: ".swiper-slide",
-          translateX: -20,
-          easing: "linear",
-          duration: 1180,
+        components.forEach((element) => {
+          element.classList.remove("animation-left");
+          element.classList.add("animation-stop");
         });
       },
 
       transitionEnd: function () {
-        anime({
-          targets: ".swiper-slide",
-          translateX: -100,
-          easing: "linear",
-          duration: 6990,
+        components.forEach((element) => {
+          element.classList.add("animation-left");
+          element.classList.remove("animation-stop");
         });
       },
 
       touchStart: function () {
-        // kvInner.classList.add("touch");
+        components.forEach((element) => {
+          element.classList.remove("animation-left");
+          element.classList.add("animation-stop");
+        });
       },
 
       touchEnd: function () {
         // kvInner.classList.remove("touch");
+        components.forEach((element) => {
+          element.classList.add("animation-left");
+          element.classList.remove("animation-stop");
+        });
       },
 
       sliderMove: function () {
