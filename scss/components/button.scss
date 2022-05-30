@@ -1,0 +1,30 @@
+.primary-button {
+  background-color: $secondaryColor;
+  font-family: $primary_font_family;
+  font-size: 0.9rem;
+  color: $primaryColor;
+  height: 1.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 22px;
+  border: none;
+  outline: none;
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    box-shadow: 0px 0px 6px 1px #ffffffd4;
+    transition: all 0.2s ease-in-out;
+  }
+
+  @include laptop {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 2.5rem;
+    font-size: 1.135rem;
+  }
+}

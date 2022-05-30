@@ -1,0 +1,44 @@
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $primaryColor;
+  @include sp {
+    margin: 0 auto;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 auto;
+
+  @include sp {
+    height: 60px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @include tb {
+    height: 80px;
+  }
+
+  @include laptop {
+    height: 120px;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+  }
+
+  @include large {
+    max-width: 1600px;
+  }
+}
+
+.nav-icon {
+  width: 22px;
+  height: 22px;
+  img {
+    object-fit: contain;
+  }
+}

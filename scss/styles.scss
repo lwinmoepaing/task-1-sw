@@ -1,0 +1,577 @@
+@import "../scss/variables";
+@import "../scss/breakpoints";
+@import "../scss/fonts";
+@import "../scss/utilities";
+
+/* BUtton */
+@import "../scss/components/button.scss";
+/* Navbar */
+@import "../scss/components/navbar.scss";
+/* Sections */
+@import "../scss/components/section-one.scss";
+
+.circle {
+  border: 3px solid $secondaryColor;
+  position: absolute;
+
+  &.right-circle {
+    position: absolute;
+    top: 0;
+
+    @include sp {
+      width: 12.7rem;
+      height: 12.7rem;
+      right: -6.35rem;
+      border-radius: 6.35rem;
+      top: 50%;
+    }
+
+    @include tb {
+      width: 18.7rem;
+      height: 18.7rem;
+      right: -9.35rem;
+      border-radius: 9.35rem;
+      top: 50%;
+    }
+
+    @include laptop {
+      width: 36.7rem;
+      height: 36.7rem;
+      right: -18.35rem;
+      top: 1rem;
+      border-radius: 18.35rem;
+    }
+
+    @include pc {
+      width: 52.7rem;
+      height: 52.7rem;
+      right: -26.35rem;
+      top: 0rem;
+      border-radius: 26.35rem;
+    }
+
+    @include large {
+      width: 48.7rem;
+      height: 48.7rem;
+      right: -24.35rem;
+      top: 0rem;
+      border-radius: 24.35rem;
+    }
+  }
+
+  // For Section Six
+  &.right-circle-small {
+    position: absolute;
+
+    @include sp {
+      width: 30.7rem;
+      height: 30.7rem;
+      right: -25.35rem;
+      border-radius: 15.35rem;
+      top: -3rem;
+    }
+
+    @include tb {
+      width: 30.7rem;
+      height: 30.7rem;
+      right: -23.35rem;
+      border-radius: 15.35rem;
+      top: -3rem;
+    }
+
+    @include laptop {
+      width: 36.7rem;
+      height: 36.7rem;
+      right: -18.35rem;
+      top: -1rem;
+      border-radius: 18.35rem;
+    }
+
+    @include pc {
+      width: 52.7rem;
+      height: 52.7rem;
+      right: -26.35rem;
+      top: 0rem;
+      border-radius: 26.35rem;
+    }
+
+    @include large {
+      width: 48.7rem;
+      height: 48.7rem;
+      right: -24.35rem;
+      top: 0rem;
+      border-radius: 24.35rem;
+    }
+  }
+
+  &.left-circle-small {
+    position: absolute;
+    top: 0;
+
+    @include sp {
+      width: 30.7rem;
+      height: 30.7rem;
+      left: -25.35rem;
+      border-radius: 15.35rem;
+      top: -3rem;
+    }
+
+    @include tb {
+      width: 30.7rem;
+      height: 30.7rem;
+      left: -25.35rem;
+      border-radius: 15.35rem;
+      top: -3rem;
+    }
+
+    @include laptop {
+      width: 36.7rem;
+      height: 36.7rem;
+      left: -18.35rem;
+      top: -4rem;
+      border-radius: 18.35rem;
+    }
+
+    @include pc {
+      width: 52.7rem;
+      height: 52.7rem;
+      left: -26.35rem;
+      top: -5rem;
+      border-radius: 26.35rem;
+    }
+
+    @include large {
+      width: 48.7rem;
+      height: 48.7rem;
+      left: -24.35rem;
+      top: -6rem;
+      border-radius: 24.35rem;
+    }
+  }
+
+  // For Seven
+  &.right-circle-seven {
+    position: absolute;
+
+    @include sp {
+      width: 30.7rem;
+      height: 30.7rem;
+      right: -25.35rem;
+      border-radius: 15.35rem;
+      top: -3rem;
+    }
+
+    @include tb {
+      width: 30.7rem;
+      height: 30.7rem;
+      right: -23.35rem;
+      border-radius: 15.35rem;
+      top: 3rem;
+    }
+
+    @include pc {
+      width: 36.7rem;
+      height: 36.7rem;
+      right: -22.35rem;
+      top: 5rem;
+      border-radius: 18.35rem;
+    }
+  }
+
+  &.left-circle-seven {
+    position: absolute;
+
+    @include sp {
+      width: 30.7rem;
+      height: 30.7rem;
+      left: -25.35rem;
+      border-radius: 15.35rem;
+      top: 33rem;
+    }
+
+    @include laptop {
+      width: 20.7rem;
+      height: 20.7rem;
+      left: -13.35rem;
+      border-radius: 10.35rem;
+      top: 3rem;
+    }
+
+    @include pc {
+      width: 33.7rem;
+      height: 33.7rem;
+      left: -22.35rem;
+      top: 4rem;
+      border-radius: 16.888rem;
+    }
+  }
+}
+
+svg path {
+  transition: 0.2s;
+}
+
+// Section Two Start
+.section-two {
+  .shape-image {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+
+    @include laptop {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    &.top-right-shape {
+      right: 2rem;
+      top: 0.5rem;
+
+      @include laptop {
+        right: 4rem;
+        top: 2rem;
+      }
+    }
+
+    &.left-bottom-shape {
+      transform: rotate(114deg);
+      left: 4rem;
+      bottom: 0.5rem;
+
+      @include laptop {
+        bottom: 1.5rem;
+      }
+    }
+  }
+
+  .title-padding-helper {
+    margin: 0 auto;
+
+    @include tb {
+      width: 492px;
+    }
+
+    @include pc {
+      width: 850px;
+      padding: 0;
+    }
+  }
+}
+
+// Section Three
+.section-three {
+  padding: 0 1.5rem;
+
+  .card-wrapper {
+    @include sp {
+      margin-top: 20px;
+    }
+
+    @include tb {
+      margin-top: 20px;
+    }
+  }
+
+  .candle-img {
+    width: 180px;
+    height: 265.45px;
+
+    @include laptop {
+      width: 200px;
+      height: 294.95px;
+      object-fit: contain;
+    }
+
+    @include pc {
+      width: 18.563rem;
+      height: 27.375rem;
+      object-fit: contain;
+    }
+  }
+  .candle-text {
+    width: 100%;
+    margin: 0 auto;
+
+    @include laptop {
+      width: 200px;
+      object-fit: contain;
+    }
+
+    @include pc {
+      width: 18.563rem;
+      object-fit: contain;
+    }
+  }
+}
+
+// Section Four
+.section-four {
+  overflow: hidden;
+
+  .text-container-wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+
+    @include tb {
+      padding-left: 5.5rem;
+      padding-right: 3rem;
+    }
+
+    .body-text {
+      padding: 0 0.5rem;
+
+      @include pc {
+        padding: 0 4.5rem;
+      }
+    }
+  }
+
+  .image-wrapper {
+    position: relative;
+    width: 16.25rem;
+    height: 23.964rem;
+    margin-right: 5.5rem;
+
+    @include pc {
+      width: 24.438rem;
+      height: 36.063rem;
+      margin-right: 10.5rem;
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
+  .shape-image {
+    position: absolute;
+
+    &.left-top-shape {
+      width: 2.5rem;
+      height: 2.5rem;
+      transform: rotate(59deg);
+      left: 2rem;
+
+      @include laptop {
+        width: 8rem;
+        height: 8rem;
+        top: -8.5rem;
+      }
+
+      @include pc {
+        width: 12rem;
+        height: 12rem;
+        top: -12.5rem;
+        left: 6rem;
+      }
+    }
+
+    &.image-bottom-shape {
+      width: 2.5rem;
+      height: 2.5rem;
+      bottom: -2rem;
+      left: 1rem;
+      transform: translateX(-50%) rotate(59deg);
+
+      @include laptop {
+        width: 8rem;
+        height: 8rem;
+        bottom: 0rem;
+        left: 1.2rem;
+      }
+
+      @include pc {
+        width: 16rem;
+        height: 16rem;
+        bottom: -2rem;
+        left: 1rem;
+      }
+    }
+  }
+}
+
+// Section Five
+.section-five {
+  .card-wrapper {
+    position: relative;
+
+    .card:nth-child(even) {
+      @include laptop {
+        position: relative;
+        top: 8rem;
+      }
+    }
+  }
+
+  .image-wrapper {
+    position: relative;
+    width: 180px;
+    height: 265.45px;
+    margin: 0 auto;
+
+    @include laptop {
+      width: 16.25rem;
+      height: 23.964rem;
+    }
+
+    @include pc {
+      width: 24.438rem;
+      height: 36.063rem;
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+}
+
+// Section Six
+.section-six {
+  position: relative;
+
+  .shape-image {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+
+    @include laptop {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    &.top-right-shape {
+      transform: rotate(114deg);
+      left: 2.5rem;
+      bottom: 1.4rem;
+
+      @include laptop {
+        right: 4rem;
+        left: 2rem;
+        bottom: -1rem;
+      }
+    }
+
+    &.left-bottom-shape {
+      right: 4rem;
+      top: -2rem;
+
+      @include laptop {
+        right: 2rem;
+      }
+    }
+  }
+
+  &:after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    border-right: 2px solid #707561;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+
+    @include laptop {
+      display: block;
+    }
+  }
+
+  .left-container {
+    @include laptop {
+      padding-right: 2rem;
+    }
+  }
+
+  .right-container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+
+  @include laptop {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+  }
+}
+
+// Section Seven
+.section-seven {
+  .candle-img {
+    width: 180px;
+    height: 265.45px;
+
+    @include laptop {
+      width: 9rem;
+      height: 13.281rem;
+      object-fit: contain;
+    }
+
+    @include pc {
+      width: 16rem;
+      height: 23.611rem;
+      object-fit: contain;
+    }
+
+    @include large {
+      width: 18.563rem;
+      height: 27.375rem;
+      object-fit: contain;
+    }
+  }
+
+  .candle-img-large {
+    width: 180px;
+    height: 265.45px;
+
+    @include laptop {
+      width: 12rem;
+      height: 17.709rem;
+      object-fit: contain;
+    }
+
+    @include pc {
+      width: 22rem;
+      height: 32.466rem;
+      object-fit: contain;
+    }
+
+    @include large {
+      width: 29.375rem;
+      height: 43.313rem;
+      object-fit: contain;
+    }
+  }
+
+  @include laptop {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+  }
+}
+
+// Footer
+.footer {
+  @include laptop {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+  }
+}
+
+#SvgBulb:hover {
+  #Bulb {
+    filter: drop-shadow(0px -7px 8px gold);
+  }
+}
+
+#Bulb.active {
+  filter: drop-shadow(0px -7px 8px gold);
+}
+
+.animation-left {
+  transform: translateX(-100px);
+  transition: all 0.2s linear;
+}

@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Prata";
+  src: url("/fonts/Prata-Regular.eot");
+  src: url("/fonts/Prata-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Prata-Regular.woff2") format("woff2"),
+    url("/fonts/Prata-Regular.woff") format("woff"),
+    url("/fonts/Prata-Regular.ttf") format("truetype"),
+    url("/fonts/Prata-Regular.svg#Prata-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AlexBrush";
+  src: url("/fonts/AlexBrush-Regular.eot");
+  src: url("/fonts/AlexBrush-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/AlexBrush-Regular.woff2") format("woff2"),
+    url("/fonts/AlexBrush-Regular.woff") format("woff"),
+    url("/fonts/AlexBrush-Regular.ttf") format("truetype"),
+    url("/fonts/AlexBrush-Regular.svg#AlexBrush-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.primary-font {
+  font-family: "Prata";
+}
+
+.title-font {
+  font-family: "AlexBrush";
+  font-size: 1.4rem;
+
+  @include sp {
+    font-size: 2.3rem;
+  }
+
+  @include tb {
+    font-size: 2.7rem;
+  }
+
+  @include laptop {
+    font-size: 3.7rem;
+  }
+
+  @include pc {
+    font-size: 6.326rem;
+    line-height: 6.0rem;
+  }
+}
+
+.header-font {
+  font-family: "Prata";
+  font-size: 0.9rem;
+
+  @include sp {
+    font-size: 0.9rem;
+  }
+
+  @include tb {
+    font-size: 1rem;
+  }
+
+  @include laptop {
+    font-size: 1.174rem;
+  }
+}
+
+.font-size-body {
+  font-size: 0.875rem;
+}
+
+.font-size-title {
+  font-size: 1.174rem;
+}

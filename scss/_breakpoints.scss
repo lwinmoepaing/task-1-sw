@@ -1,0 +1,43 @@
+$breakpoints: (
+  "sp": 0,
+  "tb": 480px,
+  "laptop": 768px,
+  "pc": 1149px,
+  "large": 1440px,
+);
+
+@mixin sp {
+  @media (min-width: map-get($breakpoints, "sp")) {
+    @content;
+  }
+}
+
+@mixin tb {
+  @media (min-width: map-get($breakpoints, "tb")) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: map-get($breakpoints, "laptop")) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: map-get($breakpoints, "pc")) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: map-get($breakpoints, "large")) {
+    @content;
+  }
+}
+
+@mixin breakpoint($bp: 0) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}

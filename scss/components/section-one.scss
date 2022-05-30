@@ -1,0 +1,52 @@
+// Section 1
+.section-one {
+  .left-image {
+    border-radius: 4px;
+    overflow: hidden;
+
+    @include sp {
+      height: 100vh;
+    }
+
+    @include laptop {
+      height: 47rem;
+    }
+  }
+
+  .animate-bell {
+    width: 100%;
+    margin-bottom: 1rem;
+    .bell-img {
+      height: 100%;
+
+      @include sp {
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: -1rem;
+      }
+    }
+
+    @include sp {
+      height: 3.375rem;
+    }
+
+    @include laptop {
+      height: 8.375rem;
+    }
+
+    .bell-button-shape {
+      width: 8rem;
+      height: 8rem;
+      bottom: -8rem;
+      position: absolute;
+      right: 0;
+
+      @include laptop {
+        width: 10rem;
+        height: 10rem;
+        bottom: -10rem;
+      }
+    }
+  }
+}
