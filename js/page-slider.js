@@ -21,7 +21,6 @@ function slider() {
     on: {
       init: function () {
         // this.el.classList.add("init");
-        console.log("Init");
       },
 
       slideChange: function () {
@@ -40,6 +39,7 @@ function slider() {
           element.classList.add("animation-left");
           element.classList.remove("animation-stop");
         });
+        console.log(this.$el);
       },
 
       touchStart: function () {
@@ -68,6 +68,24 @@ function slider() {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+  });
+
+  swiperContainer.addEventListener("mouseenter", function () {
+    if (!swiper.autoplay.running) {
+      swiper.autoplay.run();
+      swiper.autoplay.start();
+      components.forEach((element) => {
+        element.classList.add("animation-left");
+        element.classList.remove("animation-stop");
+      });
+    }
+  });
+
+  swiperContainer.addEventListener("mouseleave", function () {
+    if (!swiper.autoplay.running) {
+      swiper.autoplay.run();
+      swiper.autoplay.start();
+    }
   });
 }
 
